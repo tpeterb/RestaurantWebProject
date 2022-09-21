@@ -208,6 +208,11 @@ img {
     font-size: 1.4vw;
     white-space: nowrap;
 }
+@media (max-width: 1000px) {
+    .mainMenu li a {
+        font-size: 2.7vw;
+    }
+}
 
 .mainMenu li a:hover {
     background-color: black;
@@ -267,8 +272,13 @@ img {
 
 .content .introduction .sectionContent {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+}
+@media (max-width: 600px) {
+    .content .introduction .sectionContent {
+        flex-direction: column;
+    }
 }
 
 .mainContentSection.introduction .sectionContent .sectionContentItem {
@@ -276,6 +286,12 @@ img {
     margin: 10px;
     font-size: 1.6vw;
     text-align: justify;
+}
+@media (max-width: 600px) {
+    .mainContentSection.introduction .sectionContent .sectionContentItem {
+        font-size: 2.7vw;
+        width: 100%;
+    }
 }
 
 .hasBox {
@@ -391,6 +407,12 @@ img {
 
 .whyUsSlideshowPage .slideContent h3 {
     font-size: 3.5vw;
+}
+@media (max-width: 600px) {
+    .whyUsSlideshowPage .slideContent h3 {
+        font-size: 4vw;
+    }
+
 }
 
 .whyUsSlideshowPage .slideshowPageItem {
@@ -516,6 +538,11 @@ img {
 .whyUsSlideshowPage .slideContent p {
     font-size: 1.6vw;
 }
+@media (max-width: 600px) {
+    .whyUsSlideshowPage .slideContent p {
+        font-size: 2.4vw;
+    }
+}
 
 .customerOpinions {
     background-image: url('opinions_bg.jpg');
@@ -528,6 +555,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: stretch;
+    flex-wrap: wrap;
 }
 
 .opinionContainer .opinion {
@@ -545,6 +573,15 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+@media (max-width: 600px) {
+    .opinionContainer .opinion {
+        font-size: 2.7vw;
+        border: 1px ridge black;
+        border-radius: 4px;
+        padding: 3vw;
+        flex-basis: 100%;
+    }
 }
 
 .opinionContainer .opinion .opinionSource {
