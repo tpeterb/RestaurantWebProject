@@ -266,43 +266,85 @@ img {
     }
 }
 
-.content .introduction {
-    background-color: #fff;
+.content {
+    background-color: antiquewhite;
+    padding: 10px 0 0 0;
 }
 
-.content .introduction .sectionContent {
+.content .foodSelectorContainer {
+    margin: 10px auto;
+    text-align: center;
+}
+
+.content .foodSelector {
+    background-color: forestgreen;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.8vw;
+    padding: 1vw;
+    border: 2px solid #000;
+    border-radius: 10px;
+}
+
+.content .foodSelector option {
+    font-weight: bold;
+    border: 1px solid #000;
+}
+
+.content .foodContainer {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
 }
-@media (max-width: 600px) {
-    .content .introduction .sectionContent {
-        flex-direction: column;
-    }
+
+.foodContainer .foodSection {
+    width: 60%;
 }
 
-.mainContentSection.introduction .sectionContent .sectionContentItem {
-    width: 40%;
-    margin: 10px;
-    font-size: 1.6vw;
-    text-align: justify;
-}
-@media (max-width: 600px) {
-    .mainContentSection.introduction .sectionContent .sectionContentItem {
-        font-size: 2.7vw;
-        width: 100%;
-    }
+.content .foodSection h1, h2 {
+    text-align: center;
+    color: forestgreen;
 }
 
-.hasBox {
-    background-color: rgba(0, 0, 0, 0.7);
-    border: 2px solid goldenrod;
-    border-radius: 10px;
+.content .foodSection h1 {
+    padding: 2vw 0 0 0;
+    font-size: 2.5vw;
+}
+
+.content .foodSection h2 {
+    font-style: italic;
+    font-size: 1.5vw;
+}
+
+.foodItem {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px dashed #584948;
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+.content .foodItem .foodName {
+    width: 80%;
+    text-align: left;
+    padding: 1.5vw 0;
+}
+
+.content .foodItem .foodPrice {
+    width: 20%;
+    text-align: right;
+    padding: 1.5vw 0;
+    color:lightseagreen;
+}
+
+.content .foodSection:last-child .foodItem:last-child {
+    border-bottom: 0;
 }
 
 .content .tableBooking {
     position: relative;
-    height: 80vh;
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -337,11 +379,7 @@ img {
     }
 }
 
-.content .mainContentSection {
-    padding: 10px;
-}
-
-.content h2 {
+.content h1, h2 {
     margin: 0 0 10px 0;
     text-align: center;
     color: #a5cd38;
@@ -369,230 +407,6 @@ img {
     background-color: darkgreen;
     color: rgb(233, 253, 246);
     cursor: pointer;
-}
-
-.sectionContentItem.containsImage {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.mainContentSection.whyUs {
-    background-color: #252525;
-}
-
-.sectionContentItemImage {
-    border: 2px ridge #252525;
-    border-radius: 10px;
-    box-shadow: 5px 5px 5px #000;
-}
-
-.whyUsSlideshowPage {
-    display: grid;
-    grid-template-columns: 1fr 10fr 1fr;
-    column-gap: 15px;
-    row-gap: 5vh;
-    grid-template-areas:
-        "leftArrow contentArea rightArrow"
-        "leftArrow buttonContainer rightArrow"    
-    ;
-    justify-content: center;
-    align-content: center;
-    justify-items: center;
-    align-items: center;
-    background-color: white;
-    height: 80vmin;
-}
-
-.whyUsSlideshowPage .slideContent {
-    grid-area: contentArea;
-    text-align: center;
-    color: white;
-}
-
-.whyUsSlideshowPage .slideContent h3 {
-    font-size: 3.5vw;
-}
-@media (max-width: 600px) {
-    .whyUsSlideshowPage .slideContent h3 {
-        font-size: 4vw;
-    }
-
-}
-
-.whyUsSlideshowPage .slideshowPageItem {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.whyUsSlideshowPage .buttonContainer {
-    grid-area: buttonContainer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-
-.whyUsSlideshowPage .buttonContainer button {
-    border: 2px solid #fff;
-    background-color: rgba(0, 0, 0, 0.7);
-    margin: 5px;
-}
-
-.whyUsSlideshowPage .leftArrow {
-    grid-area: leftArrow;
-}
-
-.whyUsSlideshowPage .rightArrow {
-    grid-area: rightArrow;
-}
-
-.whyUsSlideshow .arrow {
-    border-radius: 50%;
-    width: 2vmax;
-    height: 2vmax;
-    border: 1px solid #fff;
-    background-color: rgba(0, 0, 0, 0.9);
-    color: white;
-    font-size: 1.5vmax;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.whyUsSlideshow .arrow:hover {
-    background-color: darkgreen;
-    color: black;
-    cursor: pointer;
-}
-
-.whyUsSlideshow .slideshowButton {
-    border-radius: 50%;
-    border: 0;
-    width: 2vmax;
-    height: 2vmax;
-}
-
-.whyUsSlideshow .page1,
-.whyUsSlideshow .page2,
-.whyUsSlideshow .page3 {
-    position: relative;
-}
-
-.whyUsSlideshow .page1 *,
-.whyUsSlideshow .page2 *,
-.whyUsSlideshow .page3 * {
-    z-index: 1;
-}
-
-.whyUsSlideshow .page1::before {
-    background-image: url('slide1.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-    content: "";
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    filter: brightness(50%);
-}
-
-.whyUsSlideshow .page2::before {
-    background-image: url('slide2.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-    content: "";
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    filter: brightness(50%);
-}
-
-.whyUsSlideshow .page3::before {
-    background-image: url('slide3.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-    content: "";
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    filter: brightness(50%);
-}
-
-.whyUsSlideshow .page2 {
-    background-image: url('slide2.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-.whyUsSlideshow .page3 {
-    background-image: url('slide3.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-.whyUsSlideshowPage .slideContent p {
-    font-size: 1.6vw;
-}
-@media (max-width: 600px) {
-    .whyUsSlideshowPage .slideContent p {
-        font-size: 2.4vw;
-    }
-}
-
-.customerOpinions {
-    background-image: url('opinions_bg.jpg');
-    background-repeat: repeat-y;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-.opinionContainer {
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    flex-wrap: wrap;
-}
-
-.opinionContainer .opinion {
-    font-size: 1.5vw;
-    color: black;
-    background-color: white;
-    width: 25%;
-    padding: 2vw;
-    margin: 1vmax;
-    border: 2px ridge black;
-    border-radius: 10px;
-    box-shadow: 10px 10px 10px #000;
-    font-style: italic;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-@media (max-width: 600px) {
-    .opinionContainer .opinion {
-        font-size: 2.7vw;
-        border: 1px ridge black;
-        border-radius: 4px;
-        padding: 3vw;
-        flex-basis: 100%;
-    }
-}
-
-.opinionContainer .opinion .opinionSource {
-    font-weight: bold;
-    font-style: normal;
-    text-align: center;
 }
 
 footer {
@@ -685,39 +499,6 @@ footer > div {
     cursor: pointer;
 }
 
-.cookies {
-    background-color: black;
-    color: gold;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 10px;
-    z-index: 9;
-    text-align: center;
-}
-
-.cookies .cookieText {
-    margin-left: 6vw;
-    margin-right: 2vw;
-    display: inline-block;
-    font-size: 13px;
-
-}
-
-.cookies .cookieAcceptButton {
-    font-size: 13px;
-    border: 1px solid #000;
-    color: black;
-    background-color: gold;
-}
-
-.cookies .cookieAcceptButton:hover {
-    color: white;
-    background-color: darkgreen;
-    cursor: pointer;
-}
-
 .iconContainer {
     display: flex;
     flex-direction: row;
@@ -725,24 +506,6 @@ footer > div {
     align-items: center;
 }
 
-
-@keyframes mainMenuHover {
-    from {background-color: rgba(200, 0, 0, 0.9); color: black;}
-    to {background-color: black; color: goldenrod}
-}
-
-@keyframes title-fade-in {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-
-.clearfix::after {
-    display: table;
-    content: "";
-    clear: both;
-}
-
-/* Style all font awesome icons */
 .fa {
     padding: 1vw;
     font-size: 1.3vw;
@@ -769,3 +532,13 @@ footer > div {
     background: #55ACEE;
     color: white;
   }
+
+@keyframes mainMenuHover {
+    from {background-color: rgba(200, 0, 0, 0.9); color: black;}
+    to {background-color: black; color: goldenrod}
+}
+
+@keyframes title-fade-in {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
