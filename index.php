@@ -49,8 +49,8 @@
                     <li class="hasSubmenu mainMenuPoint">
                         <a href="">Menü</a>
                         <ul class="submenu">
-                            <li><a href="etlap.html">Étlap</a></li>
-                            <li><a href="">Itallap</a></li>
+                            <li><a href="etlap.php">Étlap</a></li>
+                            <li><a href="itallap.php">Itallap</a></li>
                         </ul>
                     </li>
                     <li class="hasNoSubmenu mainMenuPoint"><a href="">Blog</a></li>
