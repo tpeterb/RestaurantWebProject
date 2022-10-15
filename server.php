@@ -67,4 +67,27 @@ if (isset($_POST['login_user'])) {
   }
 }
 
+if (isset($_POST['table_reservation'])) {
+  $date = $_POST['date'];
+  $people = mysqli_real_escape_string($db, $_POST['people']);
+  $username = $_SESSION['username'];
+  $get_id_query = "SELECT id FROM users WHERE username='$username'";
+  $result = mysqli_query($db, $get_id_query);
+  $user = mysqli_fetch_assoc($result);
+  $id = $user['id'];
+
+  if (empty($date)) { array_push($errors, "Adjon meg egy dátumot"); }
+  if (empty($people)) { array_push($errors, "Adja meg a vendégek számát"); }
+  if (empty($id)) { array_push($errors, "Jelentkezzen be"); }
+  if (time()+(60*60*12) > strtotime($date)) { array_push($errors, "Asztalfoglalást minimum 12 órával előre szükséges leadni"); }
+
+  if (count($errors) == 0) {
+  	$query = "INSERT INTO table_reservation (user_id, people, tr_date) 
+  			  VALUES('$id', '$people', '$date')";
+  	mysqli_query($db, $query);
+  	header('location: index.php');
+  }
+}
+
+
 ?>

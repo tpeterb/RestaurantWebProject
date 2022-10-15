@@ -1,12 +1,14 @@
 <?php 
     session_start(); 
     header("Content-Type: text/html; charset=utf-8");
+    $mustlogin="";
 
     if (isset($_GET['logout'])) {
         session_destroy();
-        unset($_SESSION['username']);
+        //unset($_SESSION['username']);
         header("location: index.php");
     }
+    
 ?>
 
 <!DOCTYPE html>
@@ -84,7 +86,12 @@
                 <h2 class="sectionContentItem">foglaljon asztalt online</h2>
                 <p class="sectionContentItem">Éttermünkben - főként péntekenként és hétvégén - teltház van. Annak érdekében, hogy egészen biztosan találj helyet nálunk, kérjük, lehetőség szerint foglalj asztalt előre.</p>
                 <div class="sectionContentItem tableBookingButtonContainer">
-                    <button type="button" class="tableBookingButton">Lefoglalom!</button>
+                    <?php  if (isset($_SESSION['username'])) : ?>
+                        <a href="reservation.php"><button type="button" class="tableBookingButton"> Lefoglalom!</button></a>
+                    <?php endif ?>
+                    <?php  if (!isset($_SESSION['username'])) : ?>
+                        <a href="login.php?mustlogin='1'"><button type="button" class="tableBookingButton"> Lefoglalom!</button></a>
+                    <?php endif ?>
                 </div>
             </section>
             <section class="mainContentSection whyUs">
@@ -201,7 +208,12 @@
                 </div>
                 <div class="usefulLinks">
                     <h4>Hasznos linkek</h4>
-                    <button class="footerButton">Asztalfoglalás</button>
+                    <?php  if (isset($_SESSION['username'])) : ?>
+                        <a href="reservation.php"><button class="footerButton">Asztalfoglalás</button></a>
+                    <?php endif ?>
+                    <?php  if (!isset($_SESSION['username'])) : ?>
+                        <a href="login.php?mustlogin='1'"><button class="footerButton">Asztalfoglalás</button></a>
+                    <?php endif ?>
                     <button class="footerButton">Rendelés</button>
                 </div>
                 <div class="followUs">

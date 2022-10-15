@@ -1,4 +1,10 @@
 <?php include('server.php') ?>
+<?php 
+    if (isset($_GET['mustlogin'])) {
+        unset($_SESSION['mustlogin']);
+        array_push($errors, "A művelethet végrehajtásához bejelentkezés szükséges!");
+    }
+?>
 <!DOCTYPE html>
 <html>
 <head>
