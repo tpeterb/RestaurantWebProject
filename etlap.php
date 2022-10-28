@@ -67,20 +67,20 @@
         </header>
         <main class="content">
             <div class="foodSelectorContainer">
-                <select class="foodSelector">
-                    <option id="chefRec"><a href="#">Konyhafőnök ajánlata</a></option>
-                    <option id="starters"><a href=""></a>Előételek</a></option>
-                    <option id="soups"><a href=""></a>Levesek</a></option>
-                    <option id="poultry"><a href=""></a>Szárnyasból készült ételek</a></option>
-                    <option id="fish"><a href=""></a>Halételek</a></option>
-                    <option id="pork"><a href=""></a>Sertéshúsból készült ételek</a></option>
-                    <option id="vegan"><a href=""></a>Vegetáriánus ételek</a></option>
-                    <option id="desserts"><a href=""></a>Desszertek</a></option>
-                    <option id="salads"><a href=""></a>Saláták</a></option>
+                <select class="foodSelector" onchange="window.location=this.value">
+                    <option value="#chefRec">Konyhafőnök ajánlata</option>
+                    <option value="#starters">Előételek</option>
+                    <option value="#soups">Levesek</option>
+                    <option value="#poultry">Szárnyasból készült ételek</option>
+                    <option value="#fish">Halételek</option>
+                    <option value="#pork">Sertéshúsból készült ételek</option>
+                    <option value="#vegan">Vegetáriánus ételek</option>
+                    <option value="#desserts">Desszertek</option>
+                    <option value="#salads">Saláták</option>
                 </select>
             </div>
             <div class="foodContainer">
-                <div class="foodSection">
+                <div class="foodSection" id="chefRec">
                     <h1>Konyhafőnök ajánlata</h1>
                     <h2>Séfünk kedvencei</h2>
                     <div class="foodList">
@@ -110,7 +110,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="foodSection">
+                <div class="foodSection" id="starters">
                     <h1>Előételek</h1>
                     <h2>Megjön tőlük az étvágy</h2>
                     <div class="foodList">
@@ -136,7 +136,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="foodSection">
+                <div class="foodSection" id="soups">
                     <h1>Levesek</h1>
                     <h2>Hosszú lével készült finomságok</h2>
                     <div class="foodList">
@@ -178,7 +178,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="foodSection">
+                <div class="foodSection" id="poultry">
                     <h1>Szárnyasból készült ételek</h1>
                     <h2>A baromfiudvar házias ízei</h2>
                     <div class="foodList">
@@ -216,8 +216,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="foodSection">
-                    <h1>Halételek</h1>
+                <div class="foodSection" id="fish">
+                    <h1 id="fish">Halételek</h1>
                     <h2>A vizek csodái</h2>
                     <div class="foodList">
                         <div class="foodItem">
@@ -246,7 +246,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="foodSection">
+                <div class="foodSection" id="pork">
                     <h1>Sertéshúsból készült ételek</h1>
                     <h2>Saját nevelésű sertésből</h2>
                     <div class="foodList">
@@ -276,7 +276,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="foodSection">
+                <div class="foodSection" id="vegan">
                     <h1>Vegetáriánus ételek</h1>
                     <h2>Ínycsiklandozó, húsmentes fogások</h2>
                     <div class="foodList">
@@ -310,7 +310,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="foodSection">
+                <div class="foodSection" id="desserts">
                     <h1>Desszertek</h1>
                     <h2>Az étlap koronája</h2>
                     <div class="foodList">
@@ -348,7 +348,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="foodSection">
+                <div class="foodSection" id="salads">
                     <h1>Saláták</h1>
                     <h2>A főételek hűséges kísérői</h2>
                     <div class="foodList">

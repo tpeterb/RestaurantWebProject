@@ -66,19 +66,19 @@
             </nav>
         </header>
         <main class="content">
-	    <div class="drinkSelectorContainer">
-                <select class="drinkSelector">
-                    <option id="chefRec"><a href="">Üdítők</a></option>
-                    <option id="starters"><a href=""></a>Ásványvizek</a></option>
-                    <option id="soups"><a href=""></a>Rostos levek</a></option>
-                    <option id="poultry"><a href=""></a>Röviditalok</a></option>
-                    <option id="fish"><a href=""></a>Sörök</a></option>
-                    <option id="pork"><a href=""></a>Borok, pezsgők</a></option>
-                    <option id="vegan"><a href=""></a>Kávék</a></option>
+            <div class="drinkSelectorContainer">
+                <select class="drinkSelector" onchange="window.location=this.value;">
+                    <option value="#softDrinks">Üdítők</option>
+                    <option value="#mineralWater">Ásványvizek</option>
+                    <option value="#juice">Rostos levek</option>
+                    <option value="#shortDrinks">Röviditalok</option>
+                    <option value="#beer">Sörök</option>
+                    <option value="#wineAndChampagne">Borok, pezsgők</option>
+                    <option value="#coffee">Kávék</option>
                 </select>
             </div>
             <div class="drinkContainer">
-                <div class="drinkSection">
+                <div class="drinkSection" id="softDrinks">
                     <h1>Üdítők</h1>
                     <h2>A felfrissülés felelősei</h2>
                     <div class="drinkList">
@@ -108,7 +108,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="drinkSection">
+                <div class="drinkSection" id="mineralWater">
                     <h1>Ásványvizek</h1>
                     <h2>Jobban csúszik tőle az étel</h2>
                     <div class="drinkList">
@@ -133,7 +133,7 @@
                 <div class="drinkSection">
                     <h1>Rostos levek</h1>
                     <h2>Palackba zárt egészség</h2>
-                    <div class="drinkList">
+                    <div class="drinkList" id="juice">
                         <div class="drinkItem">
                             <div class="drinkName">Cappy alma, narancs, ananász</div>
                             <div class="drinkPrice">300 Ft</div>
@@ -152,7 +152,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="drinkSection">
+                <div class="drinkSection" id="shortDrinks">
                     <h1>Röviditalok</h1>
                     <h2>A szeszélyes boldogság hírnökei</h2>
                     <div class="drinkList">
@@ -198,7 +198,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="drinkSection">
+                <div class="drinkSection" id="beer">
                     <h1>Sörök</h1>
                     <h2>A legjobb minőségű árpából</h2>
                     <div class="drinkList">
@@ -228,7 +228,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="drinkSection">
+                <div class="drinkSection" id="wineAndChampagne">
                     <h1>Borok, pezsgők</h1>
                     <h2>A borvidékek kincsei</h2>
                     <div class="drinkList">
@@ -266,7 +266,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="drinkSection">
+                <div class="drinkSection" id="coffee">
                     <h1>Kávék</h1>
                     <h2>Élénkítő finomságok</h2>
                     <div class="drinkList">
