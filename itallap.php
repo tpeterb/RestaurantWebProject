@@ -85,26 +85,32 @@
                         <div class="drinkItem">
                             <div class="drinkName">Fanta</div>
                             <div class="drinkPrice">300 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="drinkItem">
                             <div class="drinkName">Limonádé</div>
                             <div class="drinkPrice">500 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="drinkItem">
                             <div class="drinkName">Coca Cola</div>
                             <div class="drinkPrice">350 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="drinkItem">
                             <div class="drinkName">Fuze tea barack, zöld</div>
                             <div class="drinkPrice">400 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="drinkItem">
                             <div class="drinkName">Kinley Gyömbér</div>
                             <div class="drinkPrice">450 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
 			<div class="drinkItem">
                             <div class="drinkName">Kinley Tonic</div>
                             <div class="drinkPrice">250 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                     </div>
                 </div>
@@ -115,18 +121,22 @@
                         <div class="drinkItem clearfix">
                             <div class="drinkName">Natur Aqua</div>
                             <div class="drinkPrice">200 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="drinkItem clearfix">
                             <div class="drinkName">Szentkirályi</div>
                             <div class="drinkPrice">150 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="drinkItem clearfix">
                             <div class="drinkName">Kékforrás</div>
                             <div class="drinkPrice">100 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="drinkItem clearfix">
                             <div class="drinkName">Aquarius</div>
                             <div class="drinkPrice">150 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                     </div>
                 </div>
@@ -137,18 +147,22 @@
                         <div class="drinkItem">
                             <div class="drinkName">Cappy alma, narancs, ananász</div>
                             <div class="drinkPrice">300 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="drinkItem">
                             <div class="drinkName">Sió barack, alma</div>
                             <div class="drinkPrice">350 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="drinkItem">
                             <div class="drinkName">Hohes C Classic</div>
                             <div class="drinkPrice">500 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="drinkItem">
                             <div class="drinkName">Rauch narancslé</div>
                             <div class="drinkPrice">450 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                     </div>
                 </div>
@@ -159,42 +173,52 @@
                         <div class="drinkItem">
                             <div class="drinkName">Szathmári szilvapálinka</div>
                             <div class="drinkPrice">700 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="drinkItem">
                             <div class="drinkName">Kajszibarack-pálinka</div>
                             <div class="drinkPrice">600 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="drinkItem">
                             <div class="drinkName">Körtepálinka</div>
                             <div class="drinkPrice">400 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="drinkItem">
                             <div class="drinkName">Jägermeister</div>
                             <div class="drinkPrice">900 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="drinkItem">
                             <div class="drinkName">Unicum</div>
                             <div class="drinkPrice">1000 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="drinkItem">
                             <div class="drinkName">Jim Beam</div>
                             <div class="drinkPrice">900 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="drinkItem">
                             <div class="drinkName">Ballantines</div>
                             <div class="drinkPrice">1100 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="drinkItem">
                             <div class="drinkName">Jack Daniel's</div>
                             <div class="drinkPrice">700 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="drinkItem">
                             <div class="drinkName">Bacardi Carta Blanca</div>
                             <div class="drinkPrice">1200 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="drinkItem">
                             <div class="drinkName">Bailey's</div>
                             <div class="drinkPrice">500 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                     </div>
                 </div>
@@ -205,26 +229,32 @@
                         <div class="drinkItem">
                             <div class="drinkName">Dreher</div>
                             <div class="drinkPrice">400 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="drinkItem">
                             <div class="drinkName">Stella Artois</div>
                             <div class="drinkPrice">500 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="drinkItem">
                             <div class="drinkName">Heineken</div>
                             <div class="drinkPrice">350 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="drinkItem">
                             <div class="drinkName">Kőbányai</div>
                             <div class="drinkPrice">200 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="drinkItem">
                             <div class="drinkName">Soproni</div>
                             <div class="drinkPrice">300 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="drinkItem">
                             <div class="drinkName">Pilsner</div>
                             <div class="drinkPrice">350 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                     </div>
                 </div>
@@ -235,34 +265,42 @@
                         <div class="drinkItem">
                             <div class="drinkName">Tokaji aszú</div>
                             <div class="drinkPrice">600 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="drinkItem">
                             <div class="drinkName">Vörösbor</div>
                             <div class="drinkPrice">400 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="drinkItem">
                             <div class="drinkName">Egri bikavér</div>
                             <div class="drinkPrice">500 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="drinkItem">
                             <div class="drinkName">Egri leányka</div>
                             <div class="drinkPrice">500 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="drinkItem">
                             <div class="drinkName">Szürkebarát</div>
                             <div class="drinkPrice">700 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="drinkItem">
                             <div class="drinkName">Olaszrizling</div>
                             <div class="drinkPrice">550 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="drinkItem">
                             <div class="drinkName">Törley</div>
                             <div class="drinkPrice">400 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="drinkItem">
                             <div class="drinkName">Hungária Extra Dry</div>
                             <div class="drinkPrice">600 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                     </div>
                 </div>
@@ -273,22 +311,27 @@
                         <div class="drinkItem">
                             <div class="drinkName">Espresso</div>
                             <div class="drinkPrice">300 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="drinkItem">
                             <div class="drinkName">Ristretto</div>
                             <div class="drinkPrice">250 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="drinkItem">
                             <div class="drinkName">Cappuccino</div>
                             <div class="drinkPrice">300 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="drinkItem">
                             <div class="drinkName">Tejeskávé</div>
                             <div class="drinkPrice">350 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="drinkItem">
                             <div class="drinkName">Jeges kávé</div>
                             <div class="drinkPrice">250 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                     </div>
                 </div>

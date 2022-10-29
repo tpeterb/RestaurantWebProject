@@ -87,26 +87,32 @@
                         <div class="foodItem">
                             <div class="foodName">Kucsmagomba krémleves</div>
                             <div class="foodPrice">1500 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="foodItem">
                             <div class="foodName">Marhalábszár pörkölt tojásos galuskával</div>
                             <div class="foodPrice">2500 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="foodItem">
                             <div class="foodName">Roston sült csirkecombfilé fűszeres tejfölös lilahagymával, baconnal és sajttal gratinírozva, medvehagymás burgonyapürével</div>
                             <div class="foodPrice">2400 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="foodItem">
                             <div class="foodName">Zöldfűszeres tejfölben pácolt csirkemell</div>
                             <div class="foodPrice">2000 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="foodItem">
                             <div class="foodName">Narancsos kacsa rózsaborsos-citrusos mangópürével</div>
                             <div class="foodPrice">2300 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="foodItem">
                             <div class="foodName">Padlizsántorony grillezett kecskesajttal</div>
                             <div class="foodPrice">2200 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                     </div>
                 </div>
@@ -117,22 +123,27 @@
                         <div class="foodItem clearfix">
                             <div class="foodName">Tatár beefsteak friss zöldségekkel</div>
                             <div class="foodPrice">2000 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="foodItem clearfix">
                             <div class="foodName">Cézár saláta chilis csirkemell csíkokkal és parmezán sajttal</div>
                             <div class="foodPrice">2100 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="foodItem clearfix">
                             <div class="foodName">Tatár beefsteak vegyes zöldséggel, bivalytejföllel, pirítóssal</div>
                             <div class="foodPrice">2400 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="foodItem clearfix">
                             <div class="foodName">Padlizsánkrém friss kerti zöldségekkel, baguette</div>
                             <div class="foodPrice">1800 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="foodItem clearfix">
                             <div class="foodName">Hízott libamáj zsírjával</div>
                             <div class="foodPrice">1500 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                     </div>
                 </div>
@@ -143,38 +154,47 @@
                         <div class="foodItem">
                             <div class="foodName">Kucsmagomba krémleves</div>
                             <div class="foodPrice">1500 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="foodItem">
                             <div class="foodName">Marhagulyás</div>
                             <div class="foodPrice">1600 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="foodItem">
                             <div class="foodName">Cheddarsajtkrémes csirkeraguleves</div>
                             <div class="foodPrice">1400 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="foodItem">
                             <div class="foodName">Házi tyúkhúsleves</div>
                             <div class="foodPrice">1700 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="foodItem">
                             <div class="foodName">Hideg gyümölcsleves</div>
                             <div class="foodPrice">1300 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="foodItem">
                             <div class="foodName">Mentás málnakrémleves</div>
                             <div class="foodPrice">1400 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="foodItem">
                             <div class="foodName">Hideg kókusztejes mangóleves</div>
                             <div class="foodPrice">1500 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="foodItem">
                             <div class="foodName">Sült vargánya krémleves</div>
                             <div class="foodPrice">1600 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="foodItem">
                             <div class="foodName">Füstölt csülkös káposztás bableves</div>
                             <div class="foodPrice">1800 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                     </div>
                 </div>
@@ -185,34 +205,42 @@
                         <div class="foodItem">
                             <div class="foodName">Ropogós csirkemell falatok füstölt sonkás tészta ágyon</div>
                             <div class="foodPrice">2500 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="foodItem">
                             <div class="foodName">Csirkemell torony Coleslaw salátával és steak burgonyával</div>
                             <div class="foodPrice">2300 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="foodItem">
                             <div class="foodName">Barnavajas citromos csirkemell steak friss kevert salátával</div>
                             <div class="foodPrice">2400 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="foodItem">
                             <div class="foodName">Tanyasi csirke rántva</div>
                             <div class="foodPrice">1700 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="foodItem">
                             <div class="foodName">Barnacukorral karamellizált libamájas csirkemell</div>
                             <div class="foodPrice">1800 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="foodItem">
                             <div class="foodName">Rozé kacsamell grillezett almával és camemberttel</div>
                             <div class="foodPrice">2000 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="foodItem">
                             <div class="foodName">Házi sajttal-sonkával töltött pulykamell</div>
                             <div class="foodPrice">1500 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="foodItem">
                             <div class="foodName">Tanyasi csirkemell csíkok cornflakes bundában</div>
                             <div class="foodPrice">1600 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                     </div>
                 </div>
@@ -223,26 +251,32 @@
                         <div class="foodItem">
                             <div class="foodName">Fogas sült fokhagymás burgonyapürével</div>
                             <div class="foodPrice">2500 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="foodItem">
                             <div class="foodName">Füstölt sóval sült BBQ lazac steak kapros-tejszínes burgonyával</div>
                             <div class="foodPrice">2200 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="foodItem">
                             <div class="foodName">Harcsapaprikás túrós metélt</div>
                             <div class="foodPrice">1900 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="foodItem">
                             <div class="foodName">Bőrén sült lazac steak zöldséges pirított spagettivel</div>
                             <div class="foodPrice">2000 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="foodItem">
                             <div class="foodName">Harcsafilé bakonyi gombamártásban, töpörtyűs túrós csuszával</div>
                             <div class="foodPrice">1900 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="foodItem">
                             <div class="foodName">Fogasfilé rántva vajas petrezselymes burgonyával, tartármártással</div>
                             <div class="foodPrice">2200 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                     </div>
                 </div>
@@ -253,26 +287,32 @@
                         <div class="foodItem">
                             <div class="foodName">Körmös pacal</div>
                             <div class="foodPrice">2200 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="foodItem">
                             <div class="foodName">Malacsült roppanós májhurkával</div>
                             <div class="foodPrice">2200 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="foodItem">
                             <div class="foodName">Velővel töltött sovány karaj</div>
                             <div class="foodPrice">2000 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="foodItem">
                             <div class="foodName">Omlós tarjapecsenye</div>
                             <div class="foodPrice">2500 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="foodItem">
                             <div class="foodName">Hajdúsági töltött káposzta</div>
                             <div class="foodPrice">1700 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="foodItem">
                             <div class="foodName">Rózsaborsos bélszín steak, igazi barna mártással, zöldség rőzsével, édesburgonya hasábbal</div>
                             <div class="foodPrice">2300 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                     </div>
                 </div>
@@ -283,30 +323,37 @@
                         <div class="foodItem">
                             <div class="foodName">Ropogós saláta pirított zöldségekkel</div>
                             <div class="foodPrice">1300 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="foodItem">
                             <div class="foodName">Lepcsánka sült zöldségekkel</div>
                             <div class="foodPrice">1500 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="foodItem">
                             <div class="foodName">Spenótós-sajtkrémes palacsinta rántva</div>
                             <div class="foodPrice">1600 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="foodItem">
                             <div class="foodName">Grillezett pekándiós padlizsán házi sajttal</div>
                             <div class="foodPrice">2000 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="foodItem">
                             <div class="foodName">Római köményes zöldséges tempura</div>
                             <div class="foodPrice">1700 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="foodItem">
                             <div class="foodName">Túrós csusza</div>
                             <div class="foodPrice">1700 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="foodItem">
                             <div class="foodName">Vargányás-zöldséges rizottó</div>
                             <div class="foodPrice">1200 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                     </div>
                 </div>
@@ -317,34 +364,42 @@
                         <div class="foodItem">
                             <div class="foodName">Aranygaluska</div>
                             <div class="foodPrice">1000 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="foodItem">
                             <div class="foodName">Rákóczi túrós</div>
                             <div class="foodPrice">600 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="foodItem">
                             <div class="foodName">Mákos guba</div>
                             <div class="foodPrice">700 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="foodItem">
                             <div class="foodName">Palacsinta</div>
                             <div class="foodPrice">200 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="foodItem">
                             <div class="foodName">Almás sütemény</div>
                             <div class="foodPrice">100 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="foodItem">
                             <div class="foodName">Meggyes pite</div>
                             <div class="foodPrice">150 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="foodItem">
                             <div class="foodName">Somlói galuska</div>
                             <div class="foodPrice">800 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="foodItem">
                             <div class="foodName">Sajttorta</div>
                             <div class="foodPrice">500 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                     </div>
                 </div>
@@ -355,26 +410,32 @@
                         <div class="foodItem">
                             <div class="foodName">Csirkemell saláta</div>
                             <div class="foodPrice">1000 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="foodItem">
                             <div class="foodName">Cézár saláta</div>
                             <div class="foodPrice">1100 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="foodItem">
                             <div class="foodName">Paradicsomsaláta</div>
                             <div class="foodPrice">300 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="foodItem">
                             <div class="foodName">Uborkasaláta</div>
                             <div class="foodPrice">400 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="foodItem">
                             <div class="foodName">Házi csalamádé</div>
                             <div class="foodPrice">500 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                         <div class="foodItem">
                             <div class="foodName">Vegyes saláta</div>
                             <div class="foodPrice">300 Ft</div>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                     </div>
                 </div>

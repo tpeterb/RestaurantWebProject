@@ -533,6 +533,14 @@ footer > div {
     color: white;
   }
 
+.fa-shopping-cart {
+    margin-top: 0.7vw;
+}
+
+.fa-shopping-cart:hover {
+    cursor: pointer;
+}
+
 @keyframes mainMenuHover {
     from {background-color: rgba(200, 0, 0, 0.9); color: black;}
     to {background-color: black; color: goldenrod}
