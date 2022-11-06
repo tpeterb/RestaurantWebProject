@@ -66,6 +66,7 @@ img {
 .loginBar li {
     float: left;
     margin: 0 20px;
+    height: 100%;
 }
 
 .loginBar a {
@@ -266,33 +267,98 @@ img {
     }
 }
 
-.content {
+.cartContainer {
     background-color: antiquewhite;
-    padding: 10px 0 0 0;
+    padding: 2vw;
 }
-
-.content section h1 {
-    color: forestgreen;
-    text-align: center;
-    font-size: 3vw;
-}
-
-.gallery {
-    width: 90%;
-    margin: 10px auto;
+.cartContainer h1 {
+    margin: 0 0 10px 0;
+    font-size: 3.3vw;
     text-align: center;
 }
 
-.gallery img {
-    width: 320px;
-    padding: 5px;
-    filter: grayscale(100%);
-    transition: 1s;
+.cartContent {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 
-.gallery img:hover {
-    filter: grayscale(0);
-    transform: scale(1.05);
+.cartTable {
+	border-collapse: collapse;
+	width: 80%;
+}
+
+.cartTable th {
+	font-size: 2.6vw;
+	color: darkgreen;
+}
+
+.cartTable th,
+.cartTable td {
+	padding: 5px;
+	text-align: center;
+}
+
+.cartTable tr {
+	border-bottom: 1px solid #000;
+}
+
+.cartTable td {
+	font-size: 2vw;
+}
+
+.cartTable td:nth-child(2) > div {
+    display: grid;
+    grid-template-columns: 3vw 2vw 3vw;
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+.sumPriceRow {
+    font-weight: bold;
+}
+
+.amountChangerButton {
+    font-size: 2vw;
+    width: 2.5vw;
+    height: 2.5vw;
+    padding: 0;
+    line-height: 1.8vw;
+    color: antiquewhite;
+    background-color: forestgreen;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.amountChangerButton:hover {
+    background-color: darkgreen;
+    cursor: pointer;
+}
+
+.cartButtonContainer {
+	margin: 10px 0;
+	width: 80%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.cartButtonContainer button {
+	padding: 1vw;
+	background-color: forestgreen;
+	color: antiquewhite;
+	border-radius: 10px;
+	font-size: 1.5vw;
+}
+
+.cartButtonContainer button:hover {
+	background-color: darkgreen;
+	cursor: pointer;
 }
 
 footer {
@@ -385,6 +451,39 @@ footer > div {
     cursor: pointer;
 }
 
+.cookies {
+    background-color: black;
+    color: gold;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    z-index: 9;
+    text-align: center;
+}
+
+.cookies .cookieText {
+    margin-left: 6vw;
+    margin-right: 2vw;
+    display: inline-block;
+    font-size: 13px;
+
+}
+
+.cookies .cookieAcceptButton {
+    font-size: 13px;
+    border: 1px solid #000;
+    color: black;
+    background-color: gold;
+}
+
+.cookies .cookieAcceptButton:hover {
+    color: white;
+    background-color: darkgreen;
+    cursor: pointer;
+}
+
 .iconContainer {
     display: flex;
     flex-direction: row;
@@ -392,6 +491,24 @@ footer > div {
     align-items: center;
 }
 
+
+@keyframes mainMenuHover {
+    from {background-color: rgba(200, 0, 0, 0.9); color: black;}
+    to {background-color: black; color: goldenrod}
+}
+
+@keyframes title-fade-in {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.clearfix::after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+/* Style all font awesome icons */
 .fa {
     padding: 1vw;
     font-size: 1.3vw;
@@ -419,21 +536,14 @@ footer > div {
     color: white;
   }
 
-@keyframes mainMenuHover {
-    from {background-color: rgba(200, 0, 0, 0.9); color: black;}
-    to {background-color: black; color: goldenrod}
-}
-
-@keyframes title-fade-in {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-
 .fa-shopping-cart {
     font-size: 2vmax !important;
     padding: 0;
 }
 
 .fa-shopping-cart:hover {
+    cursor: pointer;
+}
+.fa-trash-o:hover {
     cursor: pointer;
 }

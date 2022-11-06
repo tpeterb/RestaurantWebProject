@@ -66,6 +66,7 @@ img {
 .loginBar li {
     float: left;
     margin: 0 20px;
+    height: 100%;
 }
 
 .loginBar a {
@@ -769,3 +770,12 @@ footer > div {
     background: #55ACEE;
     color: white;
   }
+
+.fa-shopping-cart {
+    font-size: 2vmax !important;
+    padding: 0;
+}
+
+.fa-shopping-cart:hover {
+    cursor: pointer;
+}
