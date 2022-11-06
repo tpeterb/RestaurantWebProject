@@ -26,7 +26,7 @@
             <ul>
                 <?php  if (isset($_SESSION['username'])) : ?>
                     <li><a href="">Bejelentkezve: <?php echo $_SESSION['username']; ?></a></li>
-                    <li><a href="etlap.php?logout='1'" style="color: red">Kijelentkezés</a></li>
+                    <li><a href="galeria.php?logout='1'" style="color: red">Kijelentkezés</a></li>
                 <?php endif ?>
                 <?php  if (!isset($_SESSION['username'])) : ?>
                     <li><a href="login.php">Bejelentkezés</a></li>
