@@ -86,7 +86,7 @@ if (isset($_POST['table_reservation'])) {
   	$query = "INSERT INTO table_reservation (user_id, people, tr_date) 
   			  VALUES('$id', '$people', '$date')";
   	mysqli_query($db, $query);
-  	header('location: index.php');
+    $_SESSION['success'] = "1";
   }
 }
 
@@ -128,7 +128,7 @@ if (isset($_POST['order_food'])) {
   	  mysqli_query($db, $query2);
     }
 
-  	header('location: index.php');
+  	$_SESSION['success'] = "1";
   }
   
 }
