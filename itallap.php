@@ -4,7 +4,7 @@
     if (isset($_GET['logout'])) {
         session_destroy();
         unset($_SESSION['username']);
-        header("location: itallap.php");
+        header("location: etlap.php");
     }
 ?>
 
@@ -17,13 +17,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Das Restaurant - Itallap</title>
 </head>
-<body>
+<body onload="initializeCart()">
     <header class="loginBar" name="top">
         <nav class="loginMenu clearfix">
             <ul>
                 <?php  if (isset($_SESSION['username'])) : ?>
                     <li><a href="">Bejelentkezve: <?php echo $_SESSION['username']; ?></a></li>
-                    <li><a href="itallap.php?logout='1'" style="color: red">Kijelentkezés</a></li>
+                    <li><a href="etlap.php?logout='1'" style="color: red">Kijelentkezés</a></li>
                 <?php endif ?>
                 <?php  if (!isset($_SESSION['username'])) : ?>
                     <li><a href="login.php">Bejelentkezés</a></li>
@@ -31,6 +31,7 @@
                 <?php endif ?>
             </ul>
         </nav>
+        <a href="kosar.php"><i class="fa fa-shopping-cart cartIcon"></i></a>
     </header>
     <a href="#top" class="navToTheTop"><i class="scrollUpIcon"></i></a>
     <div class="container">
@@ -54,19 +55,14 @@
                     </li>
                     <li class="hasNoSubmenu mainMenuPoint"><a href="">Blog</a></li>
                     <li class="hasSubmenu mainMenuPoint">
-                        <a href="">Rendezvényszervezés</a>
-                        <ul class="submenu">
-                            <li><a href="">Esküvőszervezés</a></li>
-                            <li><a href="">Céges rendezvények</a></li>
-                            <li><a href="">Különleges események</a></li>
-                        </ul>
+                        <a href="galeria.php">Galéria</a>
 		            </li>
-                    <li class="hasNoSubmenu mainMenuPoint"><a href="kapcsolat.html">Kapcsolat</a></li>
+                    <li class="hasNoSubmenu mainMenuPoint"><a href="kapcsolat.php">Kapcsolat</a></li>
                 </ul>
             </nav>
         </header>
         <main class="content">
-            <div class="drinkSelectorContainer">
+	        <div class="drinkSelectorContainer">
                 <select class="drinkSelector" onchange="window.location=this.value;">
                     <option value="#softDrinks">Üdítők</option>
                     <option value="#mineralWater">Ásványvizek</option>
@@ -85,32 +81,32 @@
                         <div class="drinkItem">
                             <div class="drinkName">Fanta</div>
                             <div class="drinkPrice">300 Ft</div>
-                            <i class="fa fa-shopping-cart"></i>
+                            <i class="fa fa-shopping-cart" onclick="handleCartIconClick('Fanta', '300 Ft')"></i>
                         </div>
                         <div class="drinkItem">
                             <div class="drinkName">Limonádé</div>
                             <div class="drinkPrice">500 Ft</div>
-                            <i class="fa fa-shopping-cart"></i>
+                            <i class="fa fa-shopping-cart" onclick="handleCartIconClick('Limonádé', '500 Ft')"></i>
                         </div>
                         <div class="drinkItem">
                             <div class="drinkName">Coca Cola</div>
                             <div class="drinkPrice">350 Ft</div>
-                            <i class="fa fa-shopping-cart"></i>
+                            <i class="fa fa-shopping-cart" onclick="handleCartIconClick('Coca Cola', '350 Ft')"></i>
                         </div>
                         <div class="drinkItem">
                             <div class="drinkName">Fuze tea barack, zöld</div>
                             <div class="drinkPrice">400 Ft</div>
-                            <i class="fa fa-shopping-cart"></i>
+                            <i class="fa fa-shopping-cart" onclick="handleCartIconClick('Fuze tea barack, zöld', '400 Ft')"></i>
                         </div>
                         <div class="drinkItem">
                             <div class="drinkName">Kinley Gyömbér</div>
                             <div class="drinkPrice">450 Ft</div>
-                            <i class="fa fa-shopping-cart"></i>
+                            <i class="fa fa-shopping-cart" onclick="handleCartIconClick('Kinley Gyömbér', '450 Ft')"></i>
                         </div>
 			<div class="drinkItem">
                             <div class="drinkName">Kinley Tonic</div>
                             <div class="drinkPrice">250 Ft</div>
-                            <i class="fa fa-shopping-cart"></i>
+                            <i class="fa fa-shopping-cart" onclick="handleCartIconClick('Kinley Tonic', '250 Ft')"></i>
                         </div>
                     </div>
                 </div>
@@ -121,22 +117,22 @@
                         <div class="drinkItem clearfix">
                             <div class="drinkName">Natur Aqua</div>
                             <div class="drinkPrice">200 Ft</div>
-                            <i class="fa fa-shopping-cart"></i>
+                            <i class="fa fa-shopping-cart" onclick="handleCartIconClick('Natur Aqua', '200 Ft')"></i>
                         </div>
                         <div class="drinkItem clearfix">
                             <div class="drinkName">Szentkirályi</div>
                             <div class="drinkPrice">150 Ft</div>
-                            <i class="fa fa-shopping-cart"></i>
+                            <i class="fa fa-shopping-cart" onclick="handleCartIconClick('Szentkirályi', '150 Ft')"></i>
                         </div>
                         <div class="drinkItem clearfix">
                             <div class="drinkName">Kékforrás</div>
                             <div class="drinkPrice">100 Ft</div>
-                            <i class="fa fa-shopping-cart"></i>
+                            <i class="fa fa-shopping-cart" onclick="handleCartIconClick('Kékforrás', '100 Ft')"></i>
                         </div>
                         <div class="drinkItem clearfix">
                             <div class="drinkName">Aquarius</div>
                             <div class="drinkPrice">150 Ft</div>
-                            <i class="fa fa-shopping-cart"></i>
+                            <i class="fa fa-shopping-cart" onclick="handleCartIconClick('Aquarius', '150 Ft')"></i>
                         </div>
                     </div>
                 </div>
@@ -147,22 +143,22 @@
                         <div class="drinkItem">
                             <div class="drinkName">Cappy alma, narancs, ananász</div>
                             <div class="drinkPrice">300 Ft</div>
-                            <i class="fa fa-shopping-cart"></i>
+                            <i class="fa fa-shopping-cart" onclick="handleCartIconClick('Cappy alma, narancs, ananász', '300 Ft')"></i>
                         </div>
                         <div class="drinkItem">
                             <div class="drinkName">Sió barack, alma</div>
                             <div class="drinkPrice">350 Ft</div>
-                            <i class="fa fa-shopping-cart"></i>
+                            <i class="fa fa-shopping-cart" onclick="handleCartIconClick('Sió barack, alma', '350 Ft')"></i>
                         </div>
                         <div class="drinkItem">
                             <div class="drinkName">Hohes C Classic</div>
                             <div class="drinkPrice">500 Ft</div>
-                            <i class="fa fa-shopping-cart"></i>
+                            <i class="fa fa-shopping-cart" onclick="handleCartIconClick('Hohes C Classic', '500 Ft')"></i>
                         </div>
                         <div class="drinkItem">
                             <div class="drinkName">Rauch narancslé</div>
                             <div class="drinkPrice">450 Ft</div>
-                            <i class="fa fa-shopping-cart"></i>
+                            <i class="fa fa-shopping-cart" onclick="handleCartIconClick('Rauch narancslé', '450 Ft')"></i>
                         </div>
                     </div>
                 </div>
@@ -173,52 +169,52 @@
                         <div class="drinkItem">
                             <div class="drinkName">Szathmári szilvapálinka</div>
                             <div class="drinkPrice">700 Ft</div>
-                            <i class="fa fa-shopping-cart"></i>
+                            <i class="fa fa-shopping-cart" onclick="handleCartIconClick('Szathmári szilvapálinka', '700 Ft')"></i>
                         </div>
                         <div class="drinkItem">
                             <div class="drinkName">Kajszibarack-pálinka</div>
                             <div class="drinkPrice">600 Ft</div>
-                            <i class="fa fa-shopping-cart"></i>
+                            <i class="fa fa-shopping-cart" onclick="handleCartIconClick('Kajszibarack-pálinka', '600 Ft')"></i>
                         </div>
                         <div class="drinkItem">
                             <div class="drinkName">Körtepálinka</div>
                             <div class="drinkPrice">400 Ft</div>
-                            <i class="fa fa-shopping-cart"></i>
+                            <i class="fa fa-shopping-cart" onclick="handleCartIconClick('Körtepálinka', '400 Ft')"></i>
                         </div>
                         <div class="drinkItem">
                             <div class="drinkName">Jägermeister</div>
                             <div class="drinkPrice">900 Ft</div>
-                            <i class="fa fa-shopping-cart"></i>
+                            <i class="fa fa-shopping-cart" onclick="handleCartIconClick('Jägermeister', '900 Ft')"></i>
                         </div>
                         <div class="drinkItem">
                             <div class="drinkName">Unicum</div>
                             <div class="drinkPrice">1000 Ft</div>
-                            <i class="fa fa-shopping-cart"></i>
+                            <i class="fa fa-shopping-cart" onclick="handleCartIconClick('Unicum', '1000 Ft')"></i>
                         </div>
                         <div class="drinkItem">
                             <div class="drinkName">Jim Beam</div>
                             <div class="drinkPrice">900 Ft</div>
-                            <i class="fa fa-shopping-cart"></i>
+                            <i class="fa fa-shopping-cart" onclick="handleCartIconClick('Jim Beam', '900 Ft')"></i>
                         </div>
                         <div class="drinkItem">
                             <div class="drinkName">Ballantines</div>
                             <div class="drinkPrice">1100 Ft</div>
-                            <i class="fa fa-shopping-cart"></i>
+                            <i class="fa fa-shopping-cart" onclick="handleCartIconClick('Ballantines', '1100 Ft')"></i>
                         </div>
                         <div class="drinkItem">
                             <div class="drinkName">Jack Daniel's</div>
                             <div class="drinkPrice">700 Ft</div>
-                            <i class="fa fa-shopping-cart"></i>
+                            <i class="fa fa-shopping-cart" onclick="handleCartIconClick(`Jack Daniel's`, '700 Ft')"></i>
                         </div>
                         <div class="drinkItem">
                             <div class="drinkName">Bacardi Carta Blanca</div>
                             <div class="drinkPrice">1200 Ft</div>
-                            <i class="fa fa-shopping-cart"></i>
+                            <i class="fa fa-shopping-cart" onclick="handleCartIconClick('Bacardi Carta Blanca', '1200 Ft')"></i>
                         </div>
                         <div class="drinkItem">
                             <div class="drinkName">Bailey's</div>
                             <div class="drinkPrice">500 Ft</div>
-                            <i class="fa fa-shopping-cart"></i>
+                            <i class="fa fa-shopping-cart" onclick="handleCartIconClick(`Bailey's`, '500 Ft')"></i>
                         </div>
                     </div>
                 </div>
@@ -229,32 +225,32 @@
                         <div class="drinkItem">
                             <div class="drinkName">Dreher</div>
                             <div class="drinkPrice">400 Ft</div>
-                            <i class="fa fa-shopping-cart"></i>
+                            <i class="fa fa-shopping-cart" onclick="handleCartIconClick('Dreher', '400 Ft')"></i>
                         </div>
                         <div class="drinkItem">
                             <div class="drinkName">Stella Artois</div>
                             <div class="drinkPrice">500 Ft</div>
-                            <i class="fa fa-shopping-cart"></i>
+                            <i class="fa fa-shopping-cart" onclick="handleCartIconClick('Stella Artois', '500 Ft')"></i>
                         </div>
                         <div class="drinkItem">
                             <div class="drinkName">Heineken</div>
                             <div class="drinkPrice">350 Ft</div>
-                            <i class="fa fa-shopping-cart"></i>
+                            <i class="fa fa-shopping-cart" onclick="handleCartIconClick('Heineken', '350 Ft')"></i>
                         </div>
                         <div class="drinkItem">
                             <div class="drinkName">Kőbányai</div>
                             <div class="drinkPrice">200 Ft</div>
-                            <i class="fa fa-shopping-cart"></i>
+                            <i class="fa fa-shopping-cart" onclick="handleCartIconClick('Kőbányai', '200 Ft')"></i>
                         </div>
                         <div class="drinkItem">
                             <div class="drinkName">Soproni</div>
                             <div class="drinkPrice">300 Ft</div>
-                            <i class="fa fa-shopping-cart"></i>
+                            <i class="fa fa-shopping-cart" onclick="handleCartIconClick('Soproni', '300 Ft')"></i>
                         </div>
                         <div class="drinkItem">
                             <div class="drinkName">Pilsner</div>
                             <div class="drinkPrice">350 Ft</div>
-                            <i class="fa fa-shopping-cart"></i>
+                            <i class="fa fa-shopping-cart" onclick="handleCartIconClick('Pilsner', '350 Ft')"></i>
                         </div>
                     </div>
                 </div>
@@ -265,42 +261,42 @@
                         <div class="drinkItem">
                             <div class="drinkName">Tokaji aszú</div>
                             <div class="drinkPrice">600 Ft</div>
-                            <i class="fa fa-shopping-cart"></i>
+                            <i class="fa fa-shopping-cart" onclick="handleCartIconClick('Tokaji aszú', '600 Ft')"></i>
                         </div>
                         <div class="drinkItem">
                             <div class="drinkName">Vörösbor</div>
                             <div class="drinkPrice">400 Ft</div>
-                            <i class="fa fa-shopping-cart"></i>
+                            <i class="fa fa-shopping-cart" onclick="handleCartIconClick('Vörösbor', '400 Ft')"></i>
                         </div>
                         <div class="drinkItem">
                             <div class="drinkName">Egri bikavér</div>
                             <div class="drinkPrice">500 Ft</div>
-                            <i class="fa fa-shopping-cart"></i>
+                            <i class="fa fa-shopping-cart" onclick="handleCartIconClick('Egri bikavér', '500 Ft')"></i>
                         </div>
                         <div class="drinkItem">
                             <div class="drinkName">Egri leányka</div>
                             <div class="drinkPrice">500 Ft</div>
-                            <i class="fa fa-shopping-cart"></i>
+                            <i class="fa fa-shopping-cart" onclick="handleCartIconClick('Egri leányka', '500 Ft')"></i>
                         </div>
                         <div class="drinkItem">
                             <div class="drinkName">Szürkebarát</div>
                             <div class="drinkPrice">700 Ft</div>
-                            <i class="fa fa-shopping-cart"></i>
+                            <i class="fa fa-shopping-cart" onclick="handleCartIconClick('Szürkebarát', '700 Ft')"></i>
                         </div>
                         <div class="drinkItem">
                             <div class="drinkName">Olaszrizling</div>
                             <div class="drinkPrice">550 Ft</div>
-                            <i class="fa fa-shopping-cart"></i>
+                            <i class="fa fa-shopping-cart" onclick="handleCartIconClick('Olaszrizling', '550 Ft')"></i>
                         </div>
                         <div class="drinkItem">
                             <div class="drinkName">Törley</div>
                             <div class="drinkPrice">400 Ft</div>
-                            <i class="fa fa-shopping-cart"></i>
+                            <i class="fa fa-shopping-cart" onclick="handleCartIconClick('Törley', '400 Ft')"></i>
                         </div>
                         <div class="drinkItem">
                             <div class="drinkName">Hungária Extra Dry</div>
                             <div class="drinkPrice">600 Ft</div>
-                            <i class="fa fa-shopping-cart"></i>
+                            <i class="fa fa-shopping-cart" onclick="handleCartIconClick('Hungária Extra Dry', '600 Ft')"></i>
                         </div>
                     </div>
                 </div>
@@ -311,27 +307,27 @@
                         <div class="drinkItem">
                             <div class="drinkName">Espresso</div>
                             <div class="drinkPrice">300 Ft</div>
-                            <i class="fa fa-shopping-cart"></i>
+                            <i class="fa fa-shopping-cart" onclick="handleCartIconClick('Espresso', '300 Ft')"></i>
                         </div>
                         <div class="drinkItem">
                             <div class="drinkName">Ristretto</div>
                             <div class="drinkPrice">250 Ft</div>
-                            <i class="fa fa-shopping-cart"></i>
+                            <i class="fa fa-shopping-cart" onclick="handleCartIconClick('Ristretto', '250 Ft')"></i>
                         </div>
                         <div class="drinkItem">
                             <div class="drinkName">Cappuccino</div>
                             <div class="drinkPrice">300 Ft</div>
-                            <i class="fa fa-shopping-cart"></i>
+                            <i class="fa fa-shopping-cart" onclick="handleCartIconClick('Cappuccino', '300 Ft')"></i>
                         </div>
                         <div class="drinkItem">
                             <div class="drinkName">Tejeskávé</div>
                             <div class="drinkPrice">350 Ft</div>
-                            <i class="fa fa-shopping-cart"></i>
+                            <i class="fa fa-shopping-cart" onclick="handleCartIconClick('Tejeskávé', '350 Ft')"></i>
                         </div>
                         <div class="drinkItem">
                             <div class="drinkName">Jeges kávé</div>
                             <div class="drinkPrice">250 Ft</div>
-                            <i class="fa fa-shopping-cart"></i>
+                            <i class="fa fa-shopping-cart" onclick="handleCartIconClick('Jeges kávé', '250 Ft')"></i>
                         </div>
                     </div>
                 </div>
@@ -396,7 +392,12 @@
                 </div>
                 <div class="usefulLinks">
                     <h4>Hasznos linkek</h4>
-                    <button class="footerButton">Asztalfoglalás</button>
+                    <?php  if (isset($_SESSION['username'])) : ?>
+                        <a href="reservation.php"><button class="footerButton">Asztalfoglalás</button></a>
+                    <?php endif ?>
+                    <?php  if (!isset($_SESSION['username'])) : ?>
+                        <a href="login.php?mustlogin='1'"><button class="footerButton">Asztalfoglalás</button></a>
+                    <?php endif ?>
                     <button class="footerButton">Rendelés</button>
                 </div>
                 <div class="followUs">
@@ -409,5 +410,6 @@
             </footer>
 	</main>
     </div>
+    <script src="kosar.js"></script>
 </body>
 </html>

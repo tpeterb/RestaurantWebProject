@@ -150,10 +150,21 @@ function changeProductCount(rowNumber, amountToAdd) {
 
 function writeData() {
 	const cart = JSON.parse(localStorage.getItem("cart"));
+	console.log(cart);
+	var arr = [];
 	for (const item of cart) {
 		console.log(" ", item.name, " ", item.price, " ", item.amount);
+		arr.push([item.name,item.price,item.amount]);
 	}
 	console.log(" ", localStorage.getItem("cartLength"));
+	//window.location.href = "order.php?arr=" + arr;
+	window.location.href = "order.php";
+	document.cookie = "arr=" + arr + "; path=/";
+	
+}
+
+function login() {
+	window.location.href = "login.php?mustlogin='1'";
 }
 
 class Product {	

@@ -34,6 +34,7 @@
                 <?php endif ?>
             </ul>
         </nav>
+        <a href="kosar.php"><i class="fa fa-shopping-cart"></i></a>
     </header>
     <a href="#top" class="navToTheTop"><i class="scrollUpIcon"></i></a>
     <div class="container">
@@ -57,14 +58,9 @@
                     </li>
                     <li class="hasNoSubmenu mainMenuPoint"><a href="">Blog</a></li>
                     <li class="hasSubmenu mainMenuPoint">
-                        <a href="">Rendezvényszervezés</a>
-                        <ul class="submenu">
-                            <li><a href="">Esküvőszervezés</a></li>
-                            <li><a href="">Céges rendezvények</a></li>
-                            <li><a href="">Különleges események</a></li>
-                        </ul>
+                        <a href="galeria.php">Galéria</a>
 		            </li>
-                    <li class="hasNoSubmenu mainMenuPoint"><a href="kapcsolat.html">Kapcsolat</a></li>
+                    <li class="hasNoSubmenu mainMenuPoint"><a href="kapcsolat.php">Kapcsolat</a></li>
                 </ul>
             </nav>
         </header>
