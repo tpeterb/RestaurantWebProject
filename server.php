@@ -94,7 +94,10 @@ if (isset($_POST['order_food'])) {
   $address = $_POST['address'];
   $phone = $_POST['phone'];
   $date = $_POST['date'];
-  $rendeles = explode(',',$_POST['rendeles']);
+  //if (empty($rendeles)) {array_push($errors, "Tegyen termékeket a rendelésbe");}
+  if (isset($_POST['rendeles'])) {
+    $rendeles = explode(',',$_POST['rendeles']);
+  }
   $username = $_SESSION['username'];
   $get_id_query = "SELECT id FROM users WHERE username='$username'";
   $result = mysqli_query($db, $get_id_query);
@@ -105,19 +108,20 @@ if (isset($_POST['order_food'])) {
   if (empty($phone)) { array_push($errors, "Adja meg a telefonszámát"); }
   if (empty($address)) { array_push($errors, "Adja meg a címét"); }
   if (empty($id)) { array_push($errors, "Jelentkezzen be"); }
-  if (empty($rendeles)) {array_push($errors, "Tegyen termékeket a rendelésbe");}
+  if (empty($_POST['rendeles'])) {array_push($errors, "Tegyen termékeket a rendelésbe");}
   if (time()+(60*60) > strtotime($date)) { array_push($errors, "Rendelést minimum 1 órával előre szükséges leadni"); }
 
   if (count($errors) == 0) {
   	$query = "INSERT INTO orders (user_id, o_address, phone, o_date) 
   			  VALUES('$id', '$address', '$phone', '$date')";
   	mysqli_query($db, $query);
-
+/*
     $get_id_query = "SELECT id FROM orders ORDER BY id DESC LIMIT 1";
     $result = mysqli_query($db, $get_id_query);
     $fetch = mysqli_fetch_assoc($result);
     $id2 = $fetch['id'];
-
+*/
+    $id2 = mysqli_insert_id($db);
     for($n = 0; $n<count($rendeles); $n += 3) {
       $f_name = strval($rendeles[$n]);
       $price = strval($rendeles[$n+1]);

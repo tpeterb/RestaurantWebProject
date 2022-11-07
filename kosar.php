@@ -202,6 +202,6 @@
             </footer>
         </main>
     </div>
-    <script src="kosar.js"></script>
+    <script src="kosar.js?'.filemtime('style.css').'"></script>
 </body>
 </html>

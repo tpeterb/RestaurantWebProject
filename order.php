@@ -7,6 +7,7 @@
     }*/
     if(isset($_COOKIE['arr'])) {
         $rendeles = strval($_COOKIE['arr']);
+        //var_dump($rendeles);
         
     }
 ?>
@@ -37,11 +38,16 @@
         <input type="datetime-local" name="date">
       </div>
       <?php 
-          echo "<input type='hidden' name='rendeles' value='".$rendeles."'/>";
+          if(isset($_COOKIE['arr'])) {
+            echo "<input type='hidden' name='rendeles' value='".$rendeles."'/>";
+          }
       ?>
-      <div class="input-group">
+      <div class="input-group" style="display:inline">
         <button type="submit" class="btn" name="order_food">Rendelés!</button>
       </div>
+      <p style="display:inline; margin-left:20px">
+        <a href="kosar.php">Vissza a kosárhoz</a>
+      </p>
     </form>
   <?php endif ?>
   <?php  if (isset($_SESSION['success'])) : ?>
@@ -49,7 +55,9 @@
       <div class="success">Sikeres Rendelés! </div>
     </div>
   <?php
+    setcookie("done",1,0,"/");
     echo '<script type="text/JavaScript"> 
+                      document.cookie = "arr=; path=/; Max-Age=-99999999"; 
                       function navigate() {
                         window.location.href = "index.php";
                       }

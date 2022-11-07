@@ -1,6 +1,12 @@
 var currentChosenProductName = "";
 var currentChosenProductPrice = 0;
 
+if (getCookie("done") == 1) {
+	clearCart();
+	document.cookie = "done=0; path=/";
+
+}
+
 function initializeCart() {
 	if (localStorage.getItem("cart") == undefined || localStorage.getItem("cart") == null) {
 		var cart = [];
@@ -154,13 +160,18 @@ function writeData() {
 	var arr = [];
 	for (const item of cart) {
 		console.log(" ", item.name, " ", item.price, " ", item.amount);
-		arr.push([item.name,item.price,item.amount]);
+		arr.push([item.name.replaceAll(',',''),item.price,item.amount]);
 	}
 	console.log(" ", localStorage.getItem("cartLength"));
 	//window.location.href = "order.php?arr=" + arr;
 	window.location.href = "order.php";
 	document.cookie = "arr=" + arr + "; path=/";
 	
+}
+
+function getCookie(key) {
+	var keyValue = document.cookie.match('(^|;) ?' + key + '=([^;]*)(;|$)');
+	return keyValue ? keyValue[2] : null;
 }
 
 function login() {

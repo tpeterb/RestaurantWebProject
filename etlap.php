@@ -53,7 +53,7 @@
                             <li><a href="itallap.php">Itallap</a></li>
                         </ul>
                     </li>
-                    <li class="hasNoSubmenu mainMenuPoint"><a href="">Blog</a></li>
+                    <li class="hasNoSubmenu mainMenuPoint"><a href="reservation.php">Asztalfoglalás</a></li>
                     <li class="hasSubmenu mainMenuPoint">
                         <a href="galeria.php">Galéria</a>
 		            </li>
@@ -497,12 +497,12 @@
                 <div class="usefulLinks">
                     <h4>Hasznos linkek</h4>
                     <?php  if (isset($_SESSION['username'])) : ?>
-                        <a href="reservation.php"><button class="footerButton">Asztalfoglalás</button></a>
+                        <a href="reservation.php"><button class="footerButton" style="width:100%">Asztalfoglalás</button></a>
                     <?php endif ?>
                     <?php  if (!isset($_SESSION['username'])) : ?>
-                        <a href="login.php?mustlogin='1'"><button class="footerButton">Asztalfoglalás</button></a>
+                        <a href="login.php?mustlogin='1'"><button class="footerButton" style="width:100%">Asztalfoglalás</button></a>
                     <?php endif ?>
-                    <button class="footerButton">Rendelés</button>
+                    <a href="etlap.php"><button class="footerButton" style="width:100%">Rendelés</button></a>
                 </div>
                 <div class="followUs">
                     <h4>Kövess minket!</h4>
