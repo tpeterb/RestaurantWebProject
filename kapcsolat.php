@@ -57,8 +57,12 @@ if (isset($_GET['logout'])) {
 							<li><a href="itallap.php">Itallap</a></li>
 						</ul>
 					</li>
-					<li class="hasNoSubmenu mainMenuPoint"><a href="reservation.php">Asztalfoglalás</a></li>
-					<li class="hasSubmenu mainMenuPoint">
+					<?php  if (isset($_SESSION['username'])) : ?>
+                        <li class="hasNoSubmenu mainMenuPoint"><a href="reservation.php">Asztalfoglalás</a></li>
+                    <?php endif ?>
+                    <?php  if (!isset($_SESSION['username'])) : ?>
+                        <li class="hasNoSubmenu mainMenuPoint"><a href="login.php?mustlogin='1'">Asztalfoglalás</a></li>
+                    <?php endif ?>					<li class="hasSubmenu mainMenuPoint">
 						<a href="galeria.php">Galéria</a>
 					</li>
 					<li class="hasNoSubmenu mainMenuPoint"><a href="">Kapcsolat</a></li>
@@ -69,7 +73,6 @@ if (isset($_GET['logout'])) {
 			<section class="formSection">
 				<div class="formContainer">
 					<form method="post" name="contactForm" action="kapcsolat.php">
-						<?php include('errors.php'); ?>
 						<h2>Lépjen velünk kapcsolatba!</h2>
 						<div class="row">
 							<div class="inputHolder">

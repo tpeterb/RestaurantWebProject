@@ -53,8 +53,12 @@
                             <li><a href="#">Itallap</a></li>
                         </ul>
                     </li>
-                    <li class="hasNoSubmenu mainMenuPoint"><a href="reservation.php">Asztalfoglalás</a></li>
-                    <li class="hasSubmenu mainMenuPoint">
+                    <?php  if (isset($_SESSION['username'])) : ?>
+                        <li class="hasNoSubmenu mainMenuPoint"><a href="reservation.php">Asztalfoglalás</a></li>
+                    <?php endif ?>
+                    <?php  if (!isset($_SESSION['username'])) : ?>
+                        <li class="hasNoSubmenu mainMenuPoint"><a href="login.php?mustlogin='1'">Asztalfoglalás</a></li>
+                    <?php endif ?>                    <li class="hasSubmenu mainMenuPoint">
                         <a href="galeria.php">Galéria</a>
 		            </li>
                     <li class="hasNoSubmenu mainMenuPoint"><a href="kapcsolat.php">Kapcsolat</a></li>

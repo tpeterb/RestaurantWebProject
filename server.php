@@ -184,7 +184,6 @@ if (isset($_POST['email_sender'])) {
   VALUES('$name', '$email', '$message')";
     mysqli_query($db, $query);
 
-    $_SESSION['success'] = "1";
   }
 
 }
